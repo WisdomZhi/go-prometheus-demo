@@ -1,0 +1,14 @@
+syntax = "proto3";
+package service;
+
+message GetUsernameReq{
+
+}
+
+message GetUsernameRes{
+    string username = 1;
+}
+
+service DemoService {
+    rpc GetUsername(GetUsernameReq) returns(GetUsernameRes);
+}
